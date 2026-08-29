@@ -1,0 +1,20 @@
+{
+    "version": "0.5",
+    "requires": [
+        "zlib/1.3.2#1cb806da49011867778ffb6ac7190fcb%1777558780.503",
+        "tomlplusplus/3.4.0#85dbfed71376fb8dc23cdcc0570e4727%1718732132.076",
+        "spdlog/1.17.0#bcbaaf7147bda6ad24ffbd1ac3d7142c%1767636069.964",
+        "libbacktrace/cci.20210118#a7691bfccd8caaf66309df196790a5a1%1722218217.276",
+        "fmt/12.1.0#6baf0fb8351783472b94ee6e36232391%1785754553.994",
+        "catch2/3.15.3#9ccd04233997ed6e4a6f4301bed9d0cd%1785933891.105",
+        "bzip2/1.0.8#c470882369c2d95c5c77e970c0c7e321%1762886692.465",
+        "boost/1.91.0#9b41246fdc6288d648e8ad5b1649fbaf%1783338724.114",
+        "benchmark/1.9.5#b885dc73ad67b40a55d45684d1c88ad1%1774363287.434"
+    ],
+    "build_requires": [
+        "cmake/4.4.2#8a0d360635c870b1d5c675489ee25074%1786458127.662",
+        "b2/5.5.3#043a75bcbb090e3f81f7ac849850d0ca%1784261134.143"
+    ],
+    "python_requires": [],
+    "config_requires": []
+}

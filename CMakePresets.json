@@ -1,0 +1,81 @@
+{
+    "version": 6,
+    "configurePresets": [
+        {
+            "name": "debug",
+            "generator": "Ninja",
+            "binaryDir": "${sourceDir}/build/Debug",
+            "cacheVariables": {
+                "CMAKE_BUILD_TYPE": "Debug",
+                "CMAKE_TOOLCHAIN_FILE": "${sourceDir}/build/Debug/generators/conan_toolchain.cmake"
+            }
+        },
+        {
+            "name": "release",
+            "generator": "Ninja",
+            "binaryDir": "${sourceDir}/build/Release",
+            "cacheVariables": {
+                "CMAKE_BUILD_TYPE": "Release",
+                "CMAKE_TOOLCHAIN_FILE": "${sourceDir}/build/Release/generators/conan_toolchain.cmake"
+            }
+        },
+        {
+            "name": "asan",
+            "inherits": "debug",
+            "binaryDir": "${sourceDir}/build/ASAN",
+            "cacheVariables": {
+                "ENABLE_ASAN": "ON"
+            }
+        },
+        {
+            "name": "tsan",
+            "inherits": "debug",
+            "binaryDir": "${sourceDir}/build/TSAN",
+            "cacheVariables": {
+                "ENABLE_TSAN": "ON"
+            }
+        },
+        {
+            "name": "static-analysis",
+            "inherits": "debug",
+            "binaryDir": "${sourceDir}/build/StaticAnalysis",
+            "cacheVariables": {
+                "ENABLE_STATIC_ANALYSIS": "ON"
+            }
+        },
+        {
+            "name": "benchmark",
+            "inherits": "release",
+            "binaryDir": "${sourceDir}/build/Benchmark",
+            "cacheVariables": {
+                "ENABLE_BENCHMARKS": "ON"
+            }
+        }
+    ],
+    "buildPresets": [
+        {
+            "name": "debug",
+            "configurePreset": "debug"
+        },
+        {
+            "name": "release",
+            "configurePreset": "release"
+        },
+        {
+            "name": "asan",
+            "configurePreset": "asan"
+        },
+        {
+            "name": "tsan",
+            "configurePreset": "tsan"
+        },
+        {
+            "name": "static-analysis",
+            "configurePreset": "static-analysis"
+        },
+        {
+            "name": "benchmark",
+            "configurePreset": "benchmark"
+        }
+    ]
+}
