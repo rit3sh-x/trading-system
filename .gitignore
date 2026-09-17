@@ -3,3 +3,6 @@ CMakeUserPresets.json
 
 # Build directories
 build/
+
+# Editor configurations
+.vscode/

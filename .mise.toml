@@ -1,0 +1,8 @@
+[tools]
+"core:python" = "3.12.3"
+"core:cmake" = "3.28.3"
+"core:ninja" = "1.11.1"
+
+"pipx:conan" = "2.31.2"
+"pipx:cppcheck" = "2.13.0"
+
